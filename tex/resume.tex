@@ -5,7 +5,9 @@
 \moderncvicons{awesome}
 
 \usepackage{fullpage}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
 
 \name{Jacopo}{Notarstefano}
 \phone[fixed]{+33~603635095}
@@ -20,62 +22,66 @@
   \section{Work Experience}
   %------------------------
 
-  \cventry{2016 -- 2018}{Junior Fellow}{CERN}{Geneva}{Switzerland}{
-    I continued contributing to INSPIRE, taking additional responsibilities
-    such as student selection and supervision. Among other projects,  I was
-    involved in
+  \cventry{\footnotesize{Feb~16~-~Jun~18}}{Junior Fellow}{CERN}{Geneva}{Switzerland}{
+    I contributed to INSPIRE, the leading information platform for the High
+    Energy Physics community, taking additional responsibilities like student
+    selection and supervision. Among other projects, I was involved in:
     \begin{itemize}
-      \item a general rewrite of the application in order to follow common
+      \item a general rewrite of the application, in order to follow common
         Flask patterns for large applications and ensure future maintainability;
-      \item a Docker-based development environment and testing infrastructure
+      \item a Docker-based development environment and testing infrastructure,
         in order to ease the frequent onboarding of new students and achieve
         reproducible builds;
-      \item a pytest-based test suite that spanned from style enforcement to UI
-        tests in order to reduce the rate of defects and prevent regressions.
+      \item a test suite based on Pytest spanning from style enforcement to UI
+        tests, in order to reduce the rate of defects and prevent regressions;
+      \item a module to migrate the data from the legacy MARCXML format to JSON;
+      \item an Elasticsearch-based module  to count the number of citations of
+        a record;
+      \item a module based on Scikit-Learn to detect when two author signatures
+        in distinct records actually refer to the same author.
     \end{itemize}
   }
 
   \vspace{0.25cm}
 
-  \cventry{2015 -- 2016}{Technical Student}{CERN}{Geneva}{Switzerland}{
-    I started contributing to INSPIRE, the leading information platform for
-    the High Energy Physics community. In particular I developed
+  \cventry{\footnotesize{Feb~15~-~Nov~16}}{Technical Student}{CERN}{Geneva}{Switzerland}{
+    I started contributing to INSPIRE. In particular I developed:
     \begin{itemize}
-      \item \texttt{invenio-matcher}, a module that leverages Elasticsearch to
-        detect if a newly ingested record is a duplicate of a record already
-        present in the system;
-      \item \texttt{invenio-grobid}, a module that wraps the GROBID Machine
-        Learning library to extract metadata from PDFs.
+      \item an Elasticsearch-based module to detect when a newly ingested
+        record is actually a duplicate of a record already present in the
+        system;
+      \item a module based on the GROBID Machine Learning library to
+        automatically extract record metadata from harvested PDFs.
     \end{itemize}
   }
 
   \vspace{0.25cm}
 
-  \cventry{2014 -- 2015}{Contract Developer}{University of Pisa}{Pisa}{Italy}{
+  \cventry{\footnotesize{Apr~14~-~Jan~15}}{Contract Developer}{University of Pisa}{Pisa}{Italy}{
     I built CAPS, a web application that the Department of Mathematics of the
     University of Pisa is still using to collect and process study plans. It
     features a REST backend API written using the CakePHP framework and a
     jQuery-based frontend that interacts with it.
   }
 
-  %-------------------------
-  \section{Other Experience}
-  %-------------------------
-
-  \cvitem{\textbf{Python}}{    
-    I used the standard scientific stack (Jupyter, NumPy, SciPy...) and a
-    Scrapy crawler to show that a filibustering technique employed by an
-    Italian Senator could be neutered by a simple Machine Learning algorithm.
-    This work earned me national newspaper coverage and was eventually
-    integrated in the procedures of the Italian Senate.
-  }
-
   %------------------
   \section{Education}
   %------------------
 
-  \cventry{}{Master's Degree in Computer Science}{University of Pisa}{}{in progress}{}
+  \cventry{\footnotesize{May~12~-~Mar~14}}{Master's Degree in Computer Science}{University of Pisa}{}{abandoned}{}
 
-  \cventry{}{Bachelor's Degree in Mathematics}{University of Pisa}{}{107/110}{}
+  \cventry{\footnotesize{Sep~06~-~Apr~12}}{Bachelor's Degree in Mathematics}{University of Pisa}{}{107/110}{}
+
+  %---------------
+  \section{Awards}
+  %---------------
+
+  \cventry{\footnotesize{Sep 06}}{Istituto Nazionale di Alta Matematica}{}{}{accepted a €12000 scholarship}{}
+
+  \cventry{\footnotesize{Sep 06}}{Scuola Galileiana di Studi Superiori}{}{}{declined a full scholarship offer}{}
+
+  \cventry{\footnotesize{May 06}}{Kangorou della Matematica}{}{}{won first prize in the national finals}{}
+
+  \cventry{\footnotesize{May 06}}{Olimpiadi della Matematica}{}{}{won a gold medal in the national finals}{}
 
 \end{document}
