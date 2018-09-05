@@ -1,9 +1,9 @@
-all: pdf
+all: resume
 
 clean:
 	rm -f resume.aux resume.log resume.out resume.pdf
 
-pdf:
+resume:
 	pdflatex tex/resume.tex
 
-.PHONY: all clean pdf
+.PHONY: all clean resume
